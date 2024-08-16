@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<style>
+    body{background: linear-gradient(to left,white,orange,white);text-align: center;}
+    summary{margin: auto;width: 300px;}
+    textarea{border-radius: 10px 10px 10px;background-color: aqua;height: 100px;width: 200px;}
+    button{border-radius: 10px 10px;background-color: blueviolet;color: white;box-shadow: 5px 5px 5px red;}
+    fieldset{background-color: black;border-radius: 10px 10px;box-shadow: 10px 10px 10px white;margin: auto;width: 200px;}
+    input{border-radius: 10px 10px;background-color: beige;color: black;margin: auto;border: 2px solid red;}
+    label{color: white;text-align: center;display: flex;flex-direction: column;padding: 5px;}
+    option{border-radius: 10px 10px;background-color: black;color: yellow;}
+    .color{background-color: rgb(11, 1, 59);width: 100px;box-shadow: 5px 5px 5px red;margin: auto;border-radius: 10px 10px;}
+    
+</style>
+<body>
+    <div id="text"><details><summary style="background-color: aqua;color: white;border-radius: 10px 10px;">Cadastro de <b style="color: red;">Brasileiros</b></summary>
+        <br>
+    <form>
+    <fieldset>
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="Nome" required>
+        <label for="Idade">Idade</label>
+        <input type="text" id="Idade" name="Idade" required>
+        <label for="Nascimento">Nascimento</label>
+        <input type="text" id="Nascimento" name="Nascimento" required>
+        <label for="CPF">CPF</label>
+        <input type="text" id="CPF" name="Cpf" required>
+        <label for="E-mail">Email</label>
+        <input type="text" id="E-mail" name="E-mail" required>
+        <label for="Celular">Celular</label>
+        <input type="text" id="Celular" name="Celular" required>
+        <br>
+        <br>
+        <label><big>Sua <b style="color: red;">Experiência
+        </b></big></label>
+        <div class="color">
+        <label for="Aprendiz">Aprendiz</label>
+        <input type="radio" value="Aprendiz" name="Experiência" required >
+        <label for="Iniciante">Iniciante</label>
+        <input type="radio" value="Iniciante" name="Experiência" required>
+        <label for="Novato">Novato</label>
+        <input type="radio" value="Novato" name="Experiência" required>
+        <label for="Veterano">Veterano</label>
+        <input type="radio" value="Veterano" name="Experiência" required>
+        <label for="Experiente">Experiente</label>
+        <input type="radio" value="Experiente" name="Experiência" required>
+        </div>
+        <br>
+        <label for="Idade"><big style="color: red;">IDADE</big></label>
+        <select name="Idade" id="Idade" required><option value="" selected disabled>Selecione</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+    </select>
+    <br>
+    <br>
+    <label>Conte um pouco da sua <b style="color: red;">Experiência</b></label>
+    <textarea rows="6" id="Experiência" name="Experiência" required></textarea>
+    <button type="submit">Confirme</button>
+    </fieldset>
+    <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="background-color: rgb(0, 0, 0);border-radius: 10px 10px;color: red;">1ªPágina</a></p>
+    </form>
+    </details></div>
+    <br>
+    <script src="script.js"></script>
+    <script>showAlert("Welcome my formulary")</script>
+</body>
+</html>
